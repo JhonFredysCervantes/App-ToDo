@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: todo-app
+  data:
+    mongodb:
+      database: todo-app
+      host: localhost
+      port: 27017
+
+server:
+  port: 8081
