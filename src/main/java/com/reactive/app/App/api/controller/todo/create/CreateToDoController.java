@@ -31,7 +31,7 @@ public class CreateToDoController {
      * @param createToDoRequest the create to do request
      * @return the response entity
      */
-    @PostMapping(value = "/api/todo")
+    @PostMapping(value = "/api/todos")
     public ResponseEntity<Mono<ToDo>> createToDo(@RequestBody CreateToDoRequest createToDoRequest) {
         return ResponseEntity.ok()
                 .body(createToDo.execute(createToDoRequest.CreateToDoRequestToCreateToDoCommand()));

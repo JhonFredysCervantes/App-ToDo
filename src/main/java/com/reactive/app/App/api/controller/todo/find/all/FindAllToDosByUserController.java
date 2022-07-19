@@ -31,7 +31,7 @@ public class FindAllToDosByUserController {
      * @param userId the user id
      * @return the string
      */
-    @GetMapping(value = "/api/todo")
+    @GetMapping(value = "/api/todos")
     Flux<ToDo> findAllToDosByUser(@RequestParam("userId") String userId) {
         return findAllToDosByUser.execute(new FindAllToDosByUserQuery(userId));
     }
